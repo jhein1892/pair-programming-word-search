@@ -35,4 +35,13 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  it("should return true if the word is present vertically", function() {
+    const result = wordSearch([
+      ["a", "b", "o", "s", "t"],
+      ["k", "o", "o", "e", "r"],
+      ["b", "a", "g", "h", "p"],
+      ["s", "t", "i", "w", "b"]],
+    "boat");
+    assert.isTrue(result);
+  });
 });
